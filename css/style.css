@@ -1,0 +1,449 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  list-style: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  width: 100%;
+  height: 600px;
+}
+
+nav *{
+  float: left;
+  padding-left: 50px;
+}
+
+nav li{
+  padding: 20px 10px 0 10px;
+  font-weight: bold;
+}
+
+nav img {
+  width: 150px;
+  height: 50px;
+  margin-right: 100px;
+}
+
+
+
+main{
+  width: 100%;
+  height: 1500px;
+  float: left;
+  background-image: url('/images/main.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 70%;
+}
+
+main h1 {
+  margin-bottom: 0%;
+  width: 60%;
+  padding: 250px 0 0 150px;
+  color: white;
+  font-size: 6.5rem;
+  font-weight: normal;
+}
+
+main p {
+  margin: 0 0 40px 0;
+  width: 60%;
+  padding: 20px 0 0 150px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+main p + button {
+  width: 200px;
+  height: 50px;
+  margin: 0 0 0 150px;
+  background-color: black;
+  color: white;
+
+}
+
+.smallbox{
+  margin: 50px 0 0 150px;
+  width: 400px;
+  height: 330px;
+  background: black;
+  color: white;
+}
+
+.smallbox span {
+  margin-top: 50px;
+  padding: 0 0 10px 40px;
+}
+
+.smallbox p strong{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.smallbox p {
+  width: 300px;
+  height: 150px;
+  padding: 50px 0 10px 40px;
+  font-size: 1rem ;
+}
+
+.smallbox button{
+  margin-left: 40px;
+  width: 200px;
+  height: 80px;
+  background-color: lightgray;
+  color: black;
+}
+
+
+.firstsec{
+  width: 100%;
+  height: 400px;
+  padding: 100px 0 0 0;
+  float: left;
+}
+
+.firstone {
+  width: 33.333%;
+  height: 400px;
+  padding: 0 0 0 250px;
+  text-align: center;
+  float: left;
+}
+
+.firstone p {
+ width: 100%;
+ padding: 0;
+ color: black;
+ font-size: 1rem;
+}
+
+.secondone {
+  width: 33.333%;
+  height: 300px;
+  padding: 0 0 0 150px;
+  text-align: center;
+  float: left;
+}
+
+.secondone p {
+  width: 100%;
+  padding: 0%;
+  color: black;
+  font-size: 1rem;
+ }
+ 
+.thirdone {
+  width: 33.333%;
+  height: 300px;
+  padding: 0 0 0 50px;
+  text-align: center;
+  float: left;
+}
+
+.thirdone p {
+  width: 100%;
+  padding: 0 50px;
+  color: black;
+  font-size: 1rem;
+ }
+
+ .bottompart{
+  width: 100%;
+  height: 500px;
+  padding: 50px 0 0 250px;
+  float: left;
+  background: rgba(243,244,246,255);
+}
+
+.bottompart h3 {
+  margin-bottom: 5px;
+  width: 40%;
+  font-size: 2.1rem;
+}
+
+.bottompart p{
+  width: 40%;
+  padding: 0%;
+  color: black;
+  font-size: 1rem;
+}
+
+.bottompart > img + h3 + p + button{
+  margin: 0%;
+  background-color: lightgray;
+  color: black;
+}
+
+.bottompart img{
+  padding: 50px 300px 0 0;
+  float: right
+}
+
+
+
+.topsecond {
+  width: 100%;
+  height: 650px;
+  float: left;
+}
+
+.aw{
+    float: left;
+}
+
+.aw img {
+  padding: 80PX 0 0 200PX;
+}
+
+.aw #awtitle {
+    width: 250px; 
+    height: 100px;
+    position: relative;
+    left: 250px;
+    bottom: 70px;
+    text-align: center;
+    color: white;
+    background: black;
+}
+
+.aw #awtitle h5{
+  margin: 0%;
+  padding: 20px 0 10px 0;
+}
+
+.aw #awtitle span{
+  font-size: .6rem ;
+}
+
+
+.al{
+  float: left;
+}
+
+.al img{
+  padding: 80PX 0 0 50PX;
+}
+
+.al #altitle {
+  width: 250px; 
+  height: 100px;
+  position: relative;
+  left: 110px;
+  bottom: 70px;
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+.al #altitle h5{
+  margin: 0%;
+  padding: 20px 0 10px 0;
+}
+
+.al #altitle span{
+  font-size: .6rem ;
+}
+
+
+.sm{
+  float: left;
+}
+
+.sm img{
+  padding: 80PX 0 0 50PX;
+}
+
+.sm #smtitle {
+  width: 250px; 
+  height: 100px;
+  position: relative;
+  left: 110px;
+  bottom: 70px;
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+.sm #smtitle h5{
+  margin: 0%;
+  padding: 20px 0 10px 0;
+}
+
+.sm #smtitle span{
+  font-size: .6rem ;
+}
+
+.midsecond {
+  width: 100%;
+  height: 700px;
+  padding: 300px 0 0 150px;
+  float: left;
+  background: rgba(243,244,246,255);
+  background-image: url("/images/img10.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 700px;
+}
+
+
+.midsecond span{
+  width: 40%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.midsecond p{
+  margin: 10px 0;
+  width: 35%;
+  padding: 0%;
+  color: black;
+  font-size: 2.2rem;
+}
+
+.midsecond p strong{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.midsecond p + button {
+  width: 200px;
+  height: 50px;
+  margin: 10px 0 0 0;
+  background-color: black;
+  color: white;
+}
+
+
+.lastsec{
+  width: 100%;
+  height: 2000px;
+  float: left;
+}
+
+.lastsec > h4 {
+  margin: 100px 0 0 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lastsec span {
+  margin-right: 100px;
+  width: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.firstpics {
+  width: 33.333%;
+  height: 1000px;
+  float: left;
+}
+.firstpics #otpic {
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+.firstpics #obpic {
+  /* padding: 50px 0 0 100px; */
+  position: relative;
+  top: 150px;
+  left: 200px;
+}
+
+.midpics {
+  width: 33.333%;
+  height: 1000px;
+  float: left;
+}
+
+.midpics #midpicone {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.midpics #midpictwo {
+  width: 370px;
+  height: 387px;
+  position: relative;
+  top: 130px;
+  left: 100px;
+}
+
+
+.lastpics{
+  width: 33.333%;
+  height: 1000px;
+  float: left;
+}
+
+.lastpics #otrpic{
+  position: relative;
+  top: 62px;
+}
+
+.lastpics #obrpic{
+  position: relative;
+  top: 113px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media all and (max-width: 500px) {
+  body *{
+    width: 100%;
+    padding: 0%;
+    text-align: center;
+  }
+
+  nav li {
+    display: none;
+  }
+}
+
